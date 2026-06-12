@@ -1,65 +1,72 @@
-# Actividad Base: Flask + DataXY
+# Visualización de Datos X-Y con Flask
 
-Este repositorio es un ejemplo inicial para practicar con **Flask** y **GitHub**.
-La intensión es que los estudiantes lo usen como punto de partida, lo modifiquen y luego lo suban a su propio repositorio.
+## Autor
+
+Edgar Díaz
+
+---
+
+## Descripción
+
+Este proyecto fue desarrollado utilizando Flask, HTML, CSS y Jinja para visualizar datos X e Y recibidos desde una aplicación móvil.
+
+La aplicación representa gráficamente la posición de los datos mediante cuatro cuadrantes. Dependiendo de los valores recibidos, el cuadrante correspondiente se ilumina para indicar la ubicación actual.
 
 ---
 
 ## Objetivo
 
-* Clonar el repositorio y trabajar en una copia personal
-* Ejecutar Flask y recibir datos **x, y** desde una aplicación móvil
-* Visualizar datos en una página HTML sencilla
-* Subir cambios a GitHub
+Desarrollar una aplicación web capaz de recibir y visualizar datos X e Y enviados desde una aplicación móvil utilizando Flask.
+
+---
+
+## Tecnologías Utilizadas
+
+* Python 3
+* Flask
+* HTML
+* CSS
+* Jinja
+* GitHub
 
 ---
 
 ## Requisitos
 
-* Entorno para Python y Flask instalados
-* Cuenta en GitHub
-* Aplicación móvil (APK) para enviar datos
+* Python 3 instalado
+* Flask instalado
+* Aplicación móvil XYaTCPfull.apk
+* Computador y celular conectados a la misma red local
 
 ---
 
-## Descarga de Aplicación APK
+## Archivo APK
 
-Se puede descargar la aplicación móvil desde aquí:
+La aplicación utilizada para enviar los datos se encuentra incluida en este repositorio:
 
-[Descargar XYaTCPfull.apk](./XYaTCPfull.apk)
+```text
+XYaTCPfull.apk
+```
 
 ---
 
-## Pasos básicos
+## Ejecución del Proyecto
 
-### 1. Clonar el repositorio
-
-```bash
-git clone https://github.com/jotaefepece/Actividad-dataXY-base
-cd Actividad-dataXY-base
-```
-
-### 2. Instalar y ejecutar la aplicación apk
-
-```bash
-### La red del celular tiene que estar en la misma red local ###
-```
-
-### 3. Ejecutar Flask
+### Ejecutar Flask
 
 ```bash
 python3 app.py
 ```
 
-### 4. Probar en el navegador
+### Abrir en el navegador
 
-```
+```text
 http://127.0.0.1:5000
 ```
 
 ---
 
-## Estructura del ejercicio
+## Estructura del Proyecto
 
 ```bash
 .
@@ -77,31 +84,42 @@ http://127.0.0.1:5000
 
 ## Capturas
 
-### Estructura de archivos
+### Estructura de Archivos
 
-![Estructura de los archivos](capturas/archivos-base.png)
+![Estructura de archivos](capturas/archivos-base.png)
 
 ---
 
-### Vista en el navegador
+### Vista de la Aplicación
 
 ![Vista HTML](capturas/vista-base.png)
 
 ---
 
-## Inicio del ejercicio
+## Funcionamiento
 
-Cada estudiante debe:
+La aplicación recibe datos X e Y desde una aplicación móvil y actualiza automáticamente la página web.
 
-* Crear una pestaña en Flask que muestre un dato recibido
-* Modificar el HTML para encender una celda en un rectángulo **2x2** según los valores **x, y**
-* Subir su versión modificada a su propio repositorio
+La visualización utiliza cuadrantes para representar la posición de los valores recibidos. Cuando cambian los datos, el cuadrante correspondiente se resalta visualmente.
 
 ---
 
-## Notas
+## Características Implementadas
 
-* Este README es solo una guía básica.
-* El trabajo final depende de cada estudiante y de cómo adapte el ejercicio.
+* Visualización de datos X e Y.
+* Actualización automática de la página.
+* Diseño personalizado mediante CSS.
+* Uso de Jinja para la lógica de visualización.
+* Implementación sin JavaScript.
+* CSS definido dentro de la etiqueta `<head>`.
+* Uso exclusivo de identificadores (`id`) en CSS.
+
+---
+
+## Observaciones
+
+Este proyecto fue desarrollado para la actividad "Visualización de Datos X-Y con Flask" de la asignatura Desarrollo de Software para Hardware.
+
+La solución cumple con las restricciones establecidas, utilizando únicamente Flask, HTML, CSS y Jinja.
 
 ---
