@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 import socket
 app = Flask(__name__)
-HOST = "172.20.10.2"	## Ip del servidor
+HOST = "192.168.1.42"	## Ip del servidor
 PORT = 12345			## Puerto del servidor
 
 def leer_sensor():
